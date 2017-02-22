@@ -6,8 +6,14 @@ router.post('/addProducts',function(req,res) {
        product.description=req.body.description;
        product.save(function()
      {
-       res.json(product);
+       res.render('product/addProducts');
 
      });
 });
+
+router.get('/addProducts',function(req,res) {
+res.render('product/addProducts');
+
+ });
+
 module.exports=router;

@@ -1,0 +1,58 @@
+<% layout('/public/layout') %>
+<div class="row">
+
+<div class="col-lg-6 col-md-offset-3  login-form o padding 2000px block-shadow block-shadow">
+
+<form method="post" action="addTransaction">
+  <h1 class="text-light">Digite La Matricula del Estudiante a Consultar</h1>
+  <hr class="thin"/>
+  <br />
+<div class="form-group" >
+   <label>Nombre Estudiante</label>
+   <input type="text"  name="nameLastName" class="form-control"  required="true" />
+</div>
+
+<div class="form-group" >
+ <label>Matricula Estudiante</label>
+ <input type="text"  name="id_Number" class="form-control"  required="true" />
+</div>
+
+<div class="form-group" >
+ <label>Tipo Estudio</label>
+ <select  name="academic_program" class="form-control">
+
+
+   <% educationmodel.forEach(function(value,index,arr){ %>
+     <option name ="category"value="<%= arr[index]._id%>"><%= arr[index].description%></option>
+       <%  }) %>
+
+</select>
+
+</div>
+
+
+
+<div class="form-group" >
+ <label>Periodo Estudio</label>
+ <input type="text"  name="academic_period" class="form-control"  required="true" />
+</div>
+
+
+
+<div class="form-group" >
+ <label>Monto Total de  Estudio</label>
+ <input type="text"  name="amount" class="form-control"  required="true" />
+</div>
+
+
+
+
+
+
+
+
+<button type="submit" class="btn btn-success">Agregar Informacion</button>
+</form>
+
+</div>
+</div>
