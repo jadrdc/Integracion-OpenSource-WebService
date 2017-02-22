@@ -1,0 +1,25 @@
+{
+  "name": "integracion-opensource-webservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadrdc/Integracion-OpenSource-WebService.git"
+  },
+  "author": "Jose Agustin Reinoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jadrdc/Integracion-OpenSource-WebService/issues"
+  },
+  "homepage": "https://github.com/jadrdc/Integracion-OpenSource-WebService#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.4",
+    "mongoose-double": "0.0.1"
+  }
+}
