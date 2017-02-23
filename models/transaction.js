@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 const TransactionSchema = new Schema({
 student : {type : Schema.Types.ObjectId, ref :'Students'},
 academic_program : { type : Schema.Types.ObjectId , ref : 'Products'},
-academic_period : String,
+academic_period : String,studentid : String,
 amount : Schema.Types.Double
 });
 
