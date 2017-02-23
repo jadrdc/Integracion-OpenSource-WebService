@@ -1,8 +1,8 @@
-const mongoose=require('mongoose');
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ProductSchema = new Schema({
-description : String
+    description: String
 });
 
-module.exports=mongoose.model('Products',ProductSchema);
+module.exports = mongoose.model('Products', ProductSchema);
